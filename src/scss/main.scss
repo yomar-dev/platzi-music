@@ -1,1 +1,63 @@
 @import '../../node_modules/bulma/bulma.sass';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+$container-width: 320px;
+$container-height: 409px;
+$color-celeste-claro: #A3ECF3;
+$color-celeste: #00BFD6;
+$color-oscuro: #212121;
+$color-amarillo: #FF9300;
+
+.container{
+	width: $container-width;
+	margin:5px auto;
+	height: $container-height;	
+	div{
+		text-align: center;
+	}
+	h2{
+		color: $color-celeste;
+		font-weight: bold;
+	}
+
+	.form{
+		div{
+			width:80%;
+			height:auto;
+			padding:3px5px;
+			margin: 7px auto;
+			text-align: left;
+
+			label{
+				width: 100%;
+				display: block;
+				text-align: left;
+				color:$color-amarillo;
+				font-size: 10px;
+				margin-bottom: 6px;
+			}
+			input[type="text"]{
+				border:none;
+				border-bottom:1.2px solid $color-amarillo;
+				width: 100%;				
+				padding: 4px;
+				color:$color-oscuro;
+				font-weight: bold;
+			}
+
+			button{
+				color:white;
+				background: $color-celeste;
+				border:none;
+				min-width: 130px;
+				min-height: 30px;
+				padding: 5px15px;
+				float:right;
+				font-weight: 600;
+
+			}
+		}
+	}
+
+}
