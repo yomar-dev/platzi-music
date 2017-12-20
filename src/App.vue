@@ -1,6 +1,7 @@
 <template lang="pug">
   #app
     p(v-show="showValue") {{ value }}
+    p(v-if="showValue") {{ value }}
 </template>
 
 <script>
@@ -9,7 +10,7 @@ export default {
   data () {
     return {
       msg: 'Hello World!!',
-      showValue: true,
+      showValue: false,
       value: 'Hello World!!'
     }
   }
