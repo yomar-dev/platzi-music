@@ -10,6 +10,8 @@
 
     input(v-model="name" placeholder="Ingresa tu nombre")
     p {{ name }}
+
+    a(v-bind:href="url" target="_blank") Link
 </template>
 
 <script>
@@ -21,7 +23,8 @@ export default {
       showValue: false,
       value: 'Hello World!!',
       items: [1, 2, 3, 4],
-      name: ''
+      name: '',
+      url: 'https://platzi.com/@yomar_dev/'
     }
   }
 }
