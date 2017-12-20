@@ -1,21 +1,7 @@
 <template lang="pug">
   #app
-    .container
-      div
-        img(src="./assets/img/header.jpg")
-        h2 Registro estación Platzi
-      .form
-        div
-          label Nombre
-          input(type="text" name="nombre" placeholde="")
-        div
-          label Apellido
-          input(type="text" name="nombre" placeholde="")
-        div
-          label Cargo
-          input(type="text" name="nombre" placeholde="")
-        .text-right
-          button.button-info Enviar
+    img(src="./assets/logo.png")
+    h1 {{ msg }}
 </template>
 
 <script>
