@@ -2,6 +2,7 @@
   #app
     p(v-show="showValue") {{ value }}
     p(v-if="showValue") {{ value }}
+    p(v-else) {{ 'Hola Mundo!!' }}
 </template>
 
 <script>
