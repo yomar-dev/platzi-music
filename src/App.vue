@@ -1,12 +1,6 @@
 <template lang="pug">
   #app
-    img(src="./assets/logo.png")
-    h1 {{ msg }}
-    p {{ 3 * 4 }}
-    p {{ 'Hola '  + 'Mundo!!'}}
-    p {{ person.name + ' ' + person.lastname }}
-    p {{ person.name.toUpperCase() }}
-    p {{ JSON.stringify(person) }}
+    p(v-show="showValue") {{ value }}
 </template>
 
 <script>
@@ -15,10 +9,8 @@ export default {
   data () {
     return {
       msg: 'Hello World!!',
-      person: {
-        name: 'Xavi',
-        lastname: 'Hernandez'
-      }
+      showValue: true,
+      value: 'Hello World!!'
     }
   }
 }
