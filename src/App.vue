@@ -38,7 +38,8 @@ export default {
    */
   computed: {
     fullName () {
-      return this.name + ' ' + this.lastName
+      //return this.name + ' ' + this.lastName
+      return `${this.name} ${this.lastName}`
     }
   }
 }
