@@ -41,6 +41,23 @@ export default {
       //return this.name + ' ' + this.lastName
       return `${this.name} ${this.lastName}`
     }
+  },
+  /**
+   * Nos permite ejecutar código a partir de que una propiedad de nuestro
+   * view model cambia. A diferencia de las Computed Properties no devuelven
+   * un valor, no son propiedades y tampoco pueden ser utilizadas en expresiones.
+   * 
+   * NOTA: los watchers se enlazan directamente sobre una variable del view model,
+   * por lo cual se tienen que llamar de la misma manera, al igual que las
+   * computed properties son funciones.
+   */
+  watch: {
+    /**
+     * Los watchers reciben el valor nuevo y el viejo de la propiedad.
+     */
+    name (newVal, oldVal) {
+      console.log(newVal, oldVal)
+    }
   }
 }
 </script>
