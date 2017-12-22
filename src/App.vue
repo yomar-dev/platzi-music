@@ -17,7 +17,7 @@
 
       .container
         .columns
-          .column
+          .column(v-for="t in tracks") {{ t.name }} - {{ t.artist }}
 </template>
 
 <script>
