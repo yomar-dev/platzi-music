@@ -11,7 +11,7 @@
                 v-model="searchQuery"
               )
             .control
-              a.button.is-info.is-large Buscar
+              a.button.is-info.is-large(@click="search") Buscar
             .control
               a.button.is-danger.is-large &times;
 
