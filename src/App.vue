@@ -3,7 +3,13 @@
     section.section
       nav.nav.has-shadow
         .container
-          input.input.is-large(type="text", placeholder="Buscar canciones")
+          .field.has-addons
+            .control.is-expanded
+              input.input.is-large(type="text", placeholder="Buscar canciones")
+            .control
+              a.button.is-info.is-large Buscar
+            .control
+              a.button.is-danger.is-large &times;
 </template>
 
 <script>
