@@ -14,6 +14,8 @@
               a.button.is-info.is-large(@click="search") Buscar
             .control
               a.button.is-danger.is-large &times;
+          p
+            small {{ searchMessage }}
 
       .container
         .columns
@@ -44,6 +46,9 @@ export default {
    * puedo utilizar funciones ya existentes.
    */
   computed: {
+    searchMessage () {
+      return `Encontrados: ${this.tracks.length}`
+    }
   },
   /**
    * Nos permite ejecutar código a partir de que una propiedad de nuestro
