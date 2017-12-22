@@ -47,6 +47,9 @@ export default {
   watch: {
   },
   methods: {
+    search () {
+      console.log(this.searchQuery)
+    }
   }
 }
 </script>
