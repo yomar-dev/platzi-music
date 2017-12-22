@@ -10,6 +10,10 @@
               a.button.is-info.is-large Buscar
             .control
               a.button.is-danger.is-large &times;
+
+      .container
+        .columns
+          .column
 </template>
 
 <script>
