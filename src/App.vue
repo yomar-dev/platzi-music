@@ -34,7 +34,8 @@ export default {
   name: 'app',
   data () {
     return {
-      searchQuery: ''
+      searchQuery: '',
+      tracks: []
     }
   },
   /**
@@ -57,7 +58,7 @@ export default {
   },
   methods: {
     search () {
-      console.log(this.searchQuery)
+      this.tracks = tracks
     }
   }
 }
