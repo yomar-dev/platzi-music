@@ -15,6 +15,9 @@
     input(v-model="name" placeholder="Ingresa tu nombre")
     input(v-model="lastName" placeholder="Ingresa tu apellido")
     p {{ fullName }}
+
+    <!-- La directiva 'v-on' recibe el tipo de evento que queremos enlazar sobre este elemento, en este caso es el evento 'click' y recibe como valor el nombre del metodo, en este caso el metodo 'format' -->
+    button(v-on:click="format") Format
 </template>
 
 <script>
@@ -57,6 +60,11 @@ export default {
      */
     name (newVal, oldVal) {
       console.log(newVal, oldVal)
+    }
+  },
+  methods: {
+    format () {
+      this.formatName = this.name.split(' ').join('-')
     }
   }
 }
