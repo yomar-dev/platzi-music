@@ -16,7 +16,7 @@
     input(v-model="lastName" placeholder="Ingresa tu apellido")
     p {{ fullName }}
 
-    <!-- La directiva 'v-on' recibe el tipo de evento que queremos enlazar sobre este elemento, en este caso es el evento 'click' y recibe como valor el nombre del metodo, en este caso el metodo 'format' -->
+    <!-- La directiva 'v-on' recibe el tipo de evento que queremos enlazar sobre este elemento, en este caso es el evento 'click' y recibe como valor el nombre del metodo, en este caso el metodo 'format'. Algo a tener en cuenta es que podemos remplazar 'v-on' por '@' y obtendremos el mismo resultado. -->
     button(v-on:click="format") Format
     p {{ formattedName }}
 </template>
