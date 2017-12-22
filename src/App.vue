@@ -1,5 +1,9 @@
 <template lang="pug">
   #app
+    section.section
+      nav.nav.has-shadow
+        .container
+          input.input.is-large(type="text", placeholder="Buscar canciones")
 </template>
 
 <script>
