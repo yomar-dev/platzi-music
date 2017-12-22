@@ -21,6 +21,15 @@
 </template>
 
 <script>
+
+const tracks = [
+  { name: 'Los caminos de la vida.', artist: 'Los Diablitos' },
+  { name: 'Ella era todo.', artist: 'Los Inquietos' },
+  { name: 'No podran separarnos.', artist: 'Jorge Celedon' },
+  { name: 'Muero por verla.', artist: 'Luis Mateus' },
+  { name: 'Que me puedas amar.', artist: 'Miguel Morales' }
+]
+
 export default {
   name: 'app',
   data () {
