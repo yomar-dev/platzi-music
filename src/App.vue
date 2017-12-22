@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     format () {
-      this.formattedName = this.name.split(' ').join('-')
+      this.formattedName = this.name.split(' ').join('-').toUpperCase()
     }
   }
 }
