@@ -5,7 +5,11 @@
         .container
           .field.has-addons
             .control.is-expanded
-              input.input.is-large(type="text", placeholder="Buscar canciones")
+              input.input.is-large(
+                type="text",
+                placeholder="Buscar canciones",
+                v-model="searchQuery"
+              )
             .control
               a.button.is-info.is-large Buscar
             .control
@@ -21,6 +25,7 @@ export default {
   name: 'app',
   data () {
     return {
+      searchQuery: ''
     }
   },
   /**
