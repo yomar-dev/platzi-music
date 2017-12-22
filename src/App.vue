@@ -18,6 +18,7 @@
 
     <!-- La directiva 'v-on' recibe el tipo de evento que queremos enlazar sobre este elemento, en este caso es el evento 'click' y recibe como valor el nombre del metodo, en este caso el metodo 'format' -->
     button(v-on:click="format") Format
+    p {{ formattedName }}
 </template>
 
 <script>
@@ -31,7 +32,8 @@ export default {
       items: [1, 2, 3, 4],
       name: '',
       url: 'https://platzi.com/@yomar_dev/',
-      lastName: ''
+      lastName: '',
+      formattedName: ''
     }
   },
   /**
@@ -64,7 +66,7 @@ export default {
   },
   methods: {
     format () {
-      this.formatName = this.name.split(' ').join('-')
+      this.formattedName = this.name.split(' ').join('-')
     }
   }
 }
